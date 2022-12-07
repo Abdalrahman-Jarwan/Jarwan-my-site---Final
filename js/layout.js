@@ -4,13 +4,13 @@ $(document).ready(function () {
 });
 
 loadNav = () => {
-    $.get('../nav.html', (data) => {
+    $.get('../Nav&Fot/nav.html', (data) => {
         $('body').prepend(data);
     });
 }
 
 loadFooter = () => {
-    $.get('../footer.html', (data) => {
+    $.get('../Nav&Fot/footer.html', (data) => {
         $('body').append(data);
     });
 }
