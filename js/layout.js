@@ -1,19 +1,16 @@
 $(document).ready(function () {
-    console.log('layout ready');
-    // loadNav();
+    loadNav();
     loadFooter();
 });
 
-// loadNav = () => {
-//     $.get('./nav.html', (data) => {
-//         $('#nav').html(data);
-//     });
-// }
+loadNav = () => {
+    $.get('../nav.html', (data) => {
+        $('body').prepend(data);
+    });
+}
 
 loadFooter = () => {
-    //fix cors issue
-
     $.get('../footer.html', (data) => {
-        $('#footer').html(data);
+        $('body').append(data);
     });
 }
