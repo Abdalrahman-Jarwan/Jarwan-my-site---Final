@@ -9867,7 +9867,7 @@ a.text-dark:focus {
   }
 
   a:not(.btn) {
-    text-decoration: underline;
+    /* text-decoration: underline; */
   }
 
   abbr[title]::after {

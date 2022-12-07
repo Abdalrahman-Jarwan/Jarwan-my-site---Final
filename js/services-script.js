@@ -11,19 +11,30 @@ renderCards = (pagedData) => {
 }
 
 getCard = (cardData) => {
+
     return `
-    <section section id = "Scardbkg" class= "col-md-4" >
-    <div id="Scard">
-        <img class='mx-auto img-thumbnail' src="${cardData.image}" width="auto" height="auto" />
-        <div class="Scard-body text-center mx-auto">
-            <div class='cvp'>
-                <h5 class="card-title font-weight-bold">${cardData.title}</h5>
-                <p class="text-muted">${cardData.model}</p>
-                <p class="card-text">${cardData.price}$</p>
-            </div>
+    
+    <a href="/HomePage.html">
+    <section class="Servcard ">
+        <div class="imgBx">
+
+            <img src="${cardData.image}">
+
         </div>
-    </div>
+        <div class="contentBx">
+            <h2>${cardData.title}</h2>
+            <div class="size">
+                <h3 class="text-muted">Model: ${cardData.model}</h3>
+
+            </div>
+            <div class="color">
+                <h3>$${cardData.price}</h3>
+
+            </div>
+
+        </div>
     </section>
+</a>
    `
 }
 
