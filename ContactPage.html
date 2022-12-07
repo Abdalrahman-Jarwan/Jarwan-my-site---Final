@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Your Description Goes Here">
+    <link rel="icon" href="images/Cycle_Tab_Icon.png" type="image/png" sizes="32x32">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Cycle</title>
+</head>
+
+<body>
+
+    <!--Begin Header-->
+    <header id="header">
+        <div class="container">
+            <div class="row justify-content-between">
+                <section class="col-md-2">
+
+                    <div id="site-logo">
+                        <a href="HomePage.html">
+                            <img src="/images/Cycle_Logo.png" width="80" height="65" alt="Site Logo">
+                        </a>
+                    </div>
+                </section>
+
+                <section class="col-md-10">
+                    <nav id="site-main-nav">
+                        <ul>
+                            <li><a href="AboutPage.html"><span class="hoverable">About</span></a>
+                            </li>
+                            <li><a href="index.html"><span class="hoverable">Services</span></a></li>
+                            <li><a href="ContactPage.html"><span class="hoverable">Contact</span></a></li>
+                        </ul>
+
+                    </nav>
+
+                </section>
+
+            </div>
+
+        </div>
+        <!--mobile nav-->
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a href="/AboutPage.html">About</a></li>
+                <li><a href="/Terms&ConditionsPage.html">Services</a></li>
+                <li><a href="/AboutPage.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <script src="script.js"></script>
+    <!--End Header-->
+
+
+    <!--Start Content-->
+
+
+    <div id="contact-container" class="container">
+        <div class="row">
+            <section class="col-md-6">
+
+                <div class="contact-frameWrap">
+
+                    <h3>Contact Us </h3>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+
+                    <div id="contact-social-icons">
+
+
+                        <a class="contact-icon" href="https://www.facebook.com/"> <i id="btn"
+                                class="fab fa-facebook-square fa-2xl"> </i>
+                        </a>
+                        <a class="contact-icon" href="https://www.instagram.com/"> <i id="btn"
+                                class="fab fa-instagram fa-2xl"></i> </a>
+                        <a class="contact-icon" href="https://twitter.com/"> <i id="btn"
+                                class="fab fa-twitter-square fa-2xl"></i> </a>
+
+
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="col-md-6">
+
+                <div class="contact-frameWrap-right">
+
+
+                    <!--Begin Contact Form-->
+                    <div id="contact-us-form">
+
+                        <form action="contact-page.php" method="post">
+                            <div class="form-group">
+                                <label for="inputName"></label>
+                                <input name="person_name" class="form-control" type="text" id="inputName"
+                                    placeholder="Name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputEmail"></label>
+                                <input name="email" class="form-control" type="email" id="inputEmail"
+                                    placeholder="Email Address">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputComments"></label>
+                                <textarea name="message" class="form-control" id="inputComments"
+                                    placeholder="Message..."></textarea>
+                            </div>
+
+                            <input name="submit" class="btn btn-default" type="submit" value="submit">
+
+
+                        </form>
+
+                        <div id="contact-social-icons-mobile">
+
+
+                            <a class="contact-icon" href="https://www.facebook.com/"> <i id="btn"
+                                    class="fab fa-facebook-square fa-2xl"> </i>
+                            </a>
+                            <a class="contact-icon" href="https://www.instagram.com/"> <i id="btn"
+                                    class="fab fa-instagram fa-2xl"></i> </a>
+                            <a class="contact-icon" href="https://twitter.com/"> <i id="btn"
+                                    class="fab fa-twitter-square fa-2xl"></i> </a>
+
+
+                        </div>
+                    </div>
+                    <!--End Contact Form-->
+                </div>
+
+
+            </section>
+
+        </div>
+    </div>
+
+
+
+
+    <!--End Content-->
+
+
+    <!--Start Footer-->
+
+    <div id="footer-container">
+        <footer class="container">
+            <div class="row no-gutters">
+
+                <section class="col-md-4">
+                    <div id="footer-credits-left">
+                        <div id="site-logo-footer">
+
+                            <img src="/images/Cycle_Footer.png" width="80" height="55" alt="Site Logo">
+                            <p id="footerCredit"> &copy; 2022 AJarwan </p>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="col-md-8">
+                    <div id="footer-credits-right no-gutters">
+
+
+
+
+                        <div id="social-icons">
+
+
+                            <a id="footer-link" href="Terms&ConditionsPage.html"><span class="hoverable">Terms &
+                                    Conditions</span></a>
+                            <a id="footer-link" href="ContactPage.html"><span class="hoverable">Contact</span></a>
+
+
+
+                            <a class="icon" href="https://www.facebook.com/"> <i id="btn"
+                                    class="fab fa-facebook-square fa-2xl"> </i>
+                            </a>
+                            <a class="icon" href="https://www.instagram.com/"> <i id="btn"
+                                    class="fab fa-instagram fa-2xl"></i> </a>
+                            <a class="icon" href="https://twitter.com/"> <i id="btn"
+                                    class="fab fa-twitter-square fa-2xl"></i> </a>
+
+
+
+                        </div>
+
+
+
+                    </div>
+                </section>
+            </div>
+        </footer>
+    </div>
+    <!--End Footer Credits-->
+    <!--Mobile Footer-->
+    <div id="mobile-footer-container">
+        <footer class="container">
+            <div class="row no-gutters">
+                <section class="col-md-6">
+                    <div id="mobile-footer-credits-left">
+
+                        <a id="mobile-footer-link1" href="Terms&ConditionsPage.html"><span class="hoverable">Terms &
+                                Conditions</span></a>
+
+                        <a id="mobile-footer-link2" href="ContactPage.html"><span class="hoverable">Contact</span></a>
+
+                    </div>
+                </section>
+
+                <section class="col-md-6">
+
+                    <div id="mobile-footer-credits-right">
+
+                        <p id="mobile-footerCredit"> &copy; 2022 AJarwan
+
+                            <a id="facebook" href="https://www.facebook.com/"> <i id="btn"
+                                    class="fab fa-facebook-square fa-2xl"></i></a>
+                            <a href="https://www.instagram.com/"> <i id="btn" class="fab fa-instagram fa-2xl"></i> </a>
+                            <a href="https://twitter.com/"> <i id="btn" class="fab fa-twitter-square fa-2xl"></i> </a>
+
+                        </p>
+
+                    </div>
+                </section>
+            </div>
+        </footer>
+    </div>
+    <!-- End Mobile Footer-->
+
+
+
+
+    <!-- JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS, then Your Own Script -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
