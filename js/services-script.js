@@ -14,7 +14,7 @@ getCard = (cardData) => {
 
     return `
     
-    <a href="/HomePage.html">
+    <a href="/Home.html">
     <section class="Servcard ">
         <div class="imgBx">
 
