@@ -12,8 +12,8 @@ $(document).ready(function () {
 
 loadFooter = () => {
     //fix cors issue
-    
-    $.ajax('./footer.html', (data) => {
+
+    $.get('../footer.html', (data) => {
         $('#footer').html(data);
     });
 }
