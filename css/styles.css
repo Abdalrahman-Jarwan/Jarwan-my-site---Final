@@ -9,6 +9,8 @@ html {
 
 body {
     background-color: #212126;
+    font-family: 'Open Sans', sans-serif;
+    color: #F7DCB0;
 }
 
 #navContainer {
@@ -77,35 +79,28 @@ body {
 
 
 /*------------ Mobile Navigation ------------*/
-body {
-    color: #F7DCB0;
-}
 
-.obile-menu a {
+
+.mobile-menu a {
     text-decoration: none;
 }
 
 header {
     padding: 0 20px;
-
     display: flex;
     justify-content: space-between;
 }
 
-#hamburger-icon ul {
-    list-style: none;
-    height: 100%;
-    display: flex;
-    text-decoration: none;
+#hamburger-icon ul {}
 
-}
 
-ul a {
+
+#hamburger-icon ul a {
     color: #F7DCB0;
     text-decoration: none;
 }
 
-ul a:hover {
+#hamburger-icon ul a:hover {
     color: #D74434;
     text-decoration: none;
 }
@@ -145,30 +140,47 @@ ul a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+
+    list-style: none;
+    height: 300px;
+    text-decoration: none;
 }
 
 .mobile-menu {
-    display: none;
+
     position: absolute;
-    top: 50px;
+    top: 60px;
     left: 0;
     height: calc(100vh - 50px);
     width: 100%;
+
 }
 
 .mobile-menu li {
     margin-bottom: 10px;
 }
 
+.mobile-menu li {
+    display: none;
+}
+
 @media only screen and (max-width: 768px) {
-    header nav {
+    #site-main-nav ul {
         display: none;
     }
 
     #hamburger-icon {
         display: block;
     }
+
+    .open .mobile-menu li {
+        display: list-item;
+
+    }
+
+
 }
+
 
 
 /*------------ Footer ---------------*/
@@ -231,7 +243,7 @@ ul a:hover {
 #footerCredit {
     text-align: right;
     display: inline;
-    padding-left: 30px;
+    padding-left: 25px;
 
     position: absolute;
 }
@@ -263,12 +275,14 @@ ul a:hover {
     margin-left: -15px;
     color: #F7DCB0;
     text-decoration: none;
+
 }
 
 #mobile-footer-link2 {
     margin-left: 55px;
     color: #F7DCB0;
     text-decoration: none;
+
 }
 
 
@@ -292,6 +306,7 @@ ul a:hover {
     #mobile-footer-container {
         display: block;
     }
+
 
 }
 
@@ -794,8 +809,8 @@ ul a:hover {
 
 #product {
     text-align: center;
-    padding-top: 80px;
-    padding-right: 60px;
+    margin-top: 80px;
+    padding-right: 50px;
     /* transform: rotate(15deg); */
 }
 
@@ -833,9 +848,9 @@ ul a:hover {
     }
 
     #product {
-        padding-top: 0;
+
         margin-top: 80px;
-        padding-right: 0;
+
 
     }
 
@@ -987,9 +1002,9 @@ ul a:hover {
 /* ---- Contact page ---- */
 
 #contact-container {
-    /* display: flex;
+    display: flex;
     align-items: center;
-    justify-content: center; */
+    justify-content: center;
 
 
 }
@@ -1031,7 +1046,8 @@ ul a:hover {
 #contact-us-form {
 
     text-align: center;
-    padding: 20px
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 
@@ -1103,6 +1119,18 @@ ul a:hover {
     display: none;
 }
 
+.form-group {
+    padding: 0px;
+}
+
+
+@media (max-width: 991px) {
+
+    #contact-us-form {
+        padding-top: 75px;
+    }
+}
+
 
 @media (max-width: 768px) {
 
@@ -1111,7 +1139,9 @@ ul a:hover {
         padding-bottom: 20px;
     }
 
-
+    #contact-us-form {
+        padding-top: 0px;
+    }
 
     #contact-social-icons {
         display: none;
