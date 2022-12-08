@@ -11,6 +11,9 @@ body {
     background-color: #212126;
 }
 
+#navContainer {
+    margin-bottom: 50px;
+}
 
 #site-logo {
     padding-top: 20px;
@@ -303,7 +306,7 @@ ul a:hover {
 
 .home-page-content {
     text-align: left;
-    padding-top: 60px;
+
 }
 
 .home-page-content h1 {
@@ -323,7 +326,7 @@ ul a:hover {
 .home-page-brandSlide h4 {
     text-align: center;
     color: #D74434;
-    padding-top: 80px;
+    margin-top: 80px;
 }
 
 
@@ -358,7 +361,7 @@ ul a:hover {
 #img1 {
     position: absolute;
     top: 10%;
-    left: 20%;
+    left: 0%;
     transform: rotate(5deg);
 
     animation-name: img1;
@@ -369,7 +372,7 @@ ul a:hover {
 #img2 {
     position: absolute;
     top: 60%;
-    right: 30%;
+    right: 35%;
     transform: rotate(15deg);
 
     animation-name: img2;
@@ -380,7 +383,7 @@ ul a:hover {
 #img3 {
     position: absolute;
     top: 50%;
-    left: 68%;
+    left: 50%;
 
     animation-name: img3;
     animation-duration: 3.5s;
@@ -441,8 +444,14 @@ ul a:hover {
     /* #btn-section {
         text-align: center;
     } */
-
+    #homePageBtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
+
+
 
 /* ---- Home-Page Slider ---- */
 
@@ -470,6 +479,7 @@ ul a:hover {
     color: #eee;
     overflow: hidden;
     position: relative;
+    margin-top: 20px;
 
 }
 
@@ -558,31 +568,36 @@ ul a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
-.container a {
+.container-lg a {
     style: none;
+    margin: 15px;
 }
 
-.container .homeCard {
+.container-lg .homeCard {
     position: relative;
     width: 300px;
     height: 450px;
-    background: #111113;
+    background: linear-gradient(320deg, rgba(255, 255, 255, 0.2) 1%, #f7dcb000 100%);
     border-radius: 20px;
     overflow: hidden;
-    margin: 15px;
+
     transition: transform 0.5s;
 }
 
 
-.container .homeCard:hover {
+.container-lg .homeCard:hover {
     transform: scale(1.06);
     transition: transform 0.5s;
 
 }
 
-.container .homeCard:before {
+.container-lg .homeCard:before {
     content: '';
     position: absolute;
     top: 0;
@@ -593,7 +608,7 @@ ul a:hover {
 
 
 
-.container .homeCard:after {
+.container-lg .homeCard:after {
 
     position: absolute;
     top: 30%;
@@ -604,7 +619,7 @@ ul a:hover {
     color: rgba(255, 255, 25, 0.05)
 }
 
-.container .homeCard .homeImgBx {
+.container-lg .homeCard .homeImgBx {
     position: absolute;
     top: 15%;
     width: 100%;
@@ -615,7 +630,7 @@ ul a:hover {
     /* transition: 0.5s; */
 }
 
-.container .homeCard:hover .homeImgBx {
+.container-lg .homeCard:hover .homeImgBx {
     /* top: 0%; */
     /* transform: translateY(0%); */
     filter: drop-shadow(0rem 0rem 1rem rgba(255, 255, 255, 0.4));
@@ -624,7 +639,7 @@ ul a:hover {
 
 }
 
-.container .homeCard .homeImgBx img {
+.container-lg .homeCard .homeImgBx img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -632,7 +647,7 @@ ul a:hover {
     width: 230px;
 }
 
-.container .homeCard .homeContentBx {
+.container-lg .homeCard .homeContentBx {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -642,11 +657,11 @@ ul a:hover {
     /* z-index: 10; */
 }
 
-.container .homeCard:hover .homeContentBx {
+.container-lg .homeCard:hover .homeContentBx {
     /* height: 210px; */
 }
 
-.container .homeCard .homeContentBx h2 {
+.container-lg .homeCard .homeContentBx h2 {
     position: relative;
     font-weight: 600;
     letter-spacing: 1px;
@@ -657,8 +672,8 @@ ul a:hover {
 
 
 
-.container .homeCard .homeContentBx .size h3,
-.container .homeCard .homeContentBx .color h3 {
+.container-lg .homeCard .homeContentBx .size h3,
+.container-lg .homeCard .homeContentBx .color h3 {
     color: #F7DCB0;
     font-size: 14px;
     text-transform: uppercase;
@@ -666,7 +681,7 @@ ul a:hover {
     /* margin-right: 10px; */
 }
 
-.container .homeCard .homeContentBx .size span {}
+.container-lg .homeCard .homeContentBx .size span {}
 
 
 /* --------- Home-Page Glassy cards ------------- */
@@ -681,7 +696,7 @@ ul a:hover {
 }
 
 #cards {
-    padding-top: 60px;
+
     font-size: 16px
 }
 
@@ -698,7 +713,21 @@ ul a:hover {
 
 }
 
-@media (max-width: 768px) {}
+#cardPad {}
+
+@media (max-width: 767px) {
+
+    #cardPad {
+        padding-bottom: 10px;
+    }
+
+    .card {
+
+        height: 150px;
+        /* width: 500px; */
+
+    }
+}
 
 
 
@@ -709,7 +738,7 @@ ul a:hover {
 /* ---- About page Content ---- */
 .about-page-content {
     text-align: center;
-    padding-top: 60px;
+
 }
 
 .about-page-content h1 {
@@ -741,10 +770,7 @@ ul a:hover {
 
 /* ---- Terms and conditions page ---- */
 
-#terms-container {
-
-    padding-top: 40px;
-}
+#terms-container {}
 
 .frameWrap {
     background-color: #4F4F4F;
@@ -961,30 +987,34 @@ ul a:hover {
 /* ---- Contact page ---- */
 
 #contact-container {
-    /* ---- change margin on footer and header themselves  ---- */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
 
-    background-color: #4F4F4F;
-    padding: 20px;
+
 }
 
-.contact-frameWrap {}
+.contact-frameWrap {
+
+    padding: 20px 10px 20px 10px;
+}
 
 .contact-frameWrap h3 {
 
     color: #D74434;
-    padding-top: 20px;
-    padding-left: 20px;
+    font-size: 28px;
 }
 
 .contact-frameWrap p {
     color: #F7DCB0;
-    padding: 20px;
     font-size: 16px;
+    padding-top: 25px;
 }
 
 #contact-social-icons {
     text-align: left;
     padding-left: 15px;
+    padding-top: 50px;
 }
 
 .contact-icon {
@@ -994,12 +1024,14 @@ ul a:hover {
 
 
 
-
+#contactRow {
+    background-color: #4F4F4F;
+}
 
 #contact-us-form {
 
     text-align: center;
-
+    padding: 20px
 }
 
 
@@ -1008,7 +1040,7 @@ ul a:hover {
     background: #636363;
     color: #F7DCB0;
     border-style: none;
-    width: 340px;
+    width: 320px;
     height: 42px;
     margin-left: auto;
     margin-right: auto;
@@ -1018,7 +1050,7 @@ ul a:hover {
     background: #636363;
     color: #F7DCB0;
     border-style: none;
-    width: 340px;
+    width: 320px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -1074,7 +1106,10 @@ ul a:hover {
 
 @media (max-width: 768px) {
 
-    #contact-us-form .btn-default {}
+    #submitWrapBtn {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 
 
 
@@ -1086,59 +1121,26 @@ ul a:hover {
         display: block;
         text-align: center;
         padding-top: 20px;
+
+    }
+
+
+    .contact-frameWrap h3 {
+
+        text-align: center;
+    }
+
+
+    .contact-frameWrap p {
+
+        padding-left: 20px;
+        padding-right: 20px;
+
     }
 
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .btn {
-    background-color: #D74434;
-    color: #F7DCB0;
-    outline: none;
-    width: 160px;
-    height: 60px;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 26px;
-    border-style: none;
-} */
-
-
-/* .contact-btn {
-    text-align: center;
-}
-
-
-.btn:hover {
-    background-color: #636363;
-    color: #F7DCB0;
-}
-
-.form-group {
-    width: 300px;
-
-
-}
-
-.contact-boxes {
-    padding-top: 30px;
-
-}
 
 
 
