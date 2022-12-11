@@ -19,6 +19,8 @@ body {
 
 #site-logo {
     padding-top: 20px;
+    position: relative;
+    z-index: 21;
 
 }
 
@@ -117,6 +119,8 @@ header {
     width: 35px;
     height: 3px;
     background-color: #F7DCB0;
+    position: relative;
+    z-index: 21;
     margin: 6px 0;
     transition: 0.4s;
 }
@@ -140,18 +144,18 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-
+    /* background-color: #D74434; */
     list-style: none;
-    height: 300px;
     text-decoration: none;
 }
 
 .mobile-menu {
-
+    display: none;
     position: absolute;
-    top: 60px;
+    top: 0px;
     left: 0;
-    height: calc(100vh - 50px);
+    padding: 60px;
+    z-index: 20;
     width: 100%;
 
 }
@@ -162,6 +166,10 @@ header {
 
 .mobile-menu li {
     display: none;
+}
+
+.mobile-menu li a {
+    font-size: 30px;
 }
 
 @media only screen and (max-width: 768px) {
