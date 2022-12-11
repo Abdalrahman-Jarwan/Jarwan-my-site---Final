@@ -1,5 +1,15 @@
 $(document).ready(function () {
     loadHeadsetData();
+
+    $('#lol').click(
+
+        function () {
+
+            loadMiceData();
+
+        }
+
+    )
 });
 
 renderCards = (pagedData) => {
