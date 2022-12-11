@@ -1,15 +1,24 @@
 $(document).ready(function () {
     loadHeadsetData();
 
-    $('#lol').click(
-
+    $('#headset').click(
         function () {
-
-            loadMiceData();
-
+            loadHeadsetData();
         }
-
     )
+
+    $('#keyboard').click(
+        function () {
+            loadKeyboardData();
+        }
+    )
+
+    $('#mice').click(
+        function () {
+            loadMiceData();
+        }
+    )
+
 });
 
 renderCards = (pagedData) => {

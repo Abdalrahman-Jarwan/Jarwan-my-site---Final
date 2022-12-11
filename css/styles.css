@@ -889,13 +889,23 @@ header {
 
 
 /* ---- servecies Product cards ---- */
-.container {
-    position: relative;
-}
+.container {}
 
 .container a {
     style: none;
 }
+
+#servicesCategory {}
+
+#card-holder {
+    align-items: center;
+    justify-content: center;
+}
+
+.Servcard {
+    text-align: center;
+}
+
 
 .container .Servcard {
     position: relative;
