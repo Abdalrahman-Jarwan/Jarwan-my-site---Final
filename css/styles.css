@@ -896,7 +896,15 @@ header {
     style: none;
 }
 
-#servicesCategory {}
+#servicesCategory a {
+    color: #F7DCB0;
+    font-style: none;
+    text-decoration: none;
+}
+
+#servicesCategory a:hover {
+    color: #D74434;
+}
 
 #card-holder {
     align-items: center;
