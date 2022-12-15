@@ -1,7 +1,6 @@
 $(document).ready(function () {
     loadNav();
     loadFooter();
-    document.getElementById('focusmeplease').focus();
 });
 
 loadNav = () => {
