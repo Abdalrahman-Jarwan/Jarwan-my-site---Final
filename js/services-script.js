@@ -21,21 +21,18 @@ $(document).ready(function () {
 
 });
 
-renderCards = (pagedData) => {
+renderCards = (pagedData, route) => {
     pagedData.data[pagedData.currentPage - 1].forEach((cardData) => {
         $('#card-holder').append(
-            getCard(cardData)
+            getCard(cardData, route)
         );
     });
 }
 
-getCard = (cardData) => {
+getCard = (cardData, route) => {
 
     return `
-    
-    
-
-    <a href="/Home.html">
+    <a href="/${route}.html">
     <section class="Servcard ">
         <div class="imgBx">
 
@@ -264,19 +261,19 @@ loadHeadsetData = () => {
     removeCards();
     let data = getHeadsetData();
     let pagedData = getPagination(data);
-    renderCards(pagedData);
+    renderCards(pagedData, 'Product-Headset');
 }
 
 loadKeyboardData = () => {
     removeCards();
     let data = getKeyboardData();
     let pagedData = getPagination(data);
-    renderCards(pagedData);
+    renderCards(pagedData, 'Product-Keyboard');
 }
 
 loadMiceData = () => {
     removeCards();
     let data = getMiceData();
     let pagedData = getPagination(data);
-    renderCards(pagedData);
+    renderCards(pagedData, 'Product-Mouse');
 }
