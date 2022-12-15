@@ -1296,11 +1296,7 @@ header {
 
 
 
-.searchIcon {
 
-    display: none;
-
-}
 
 .overlay {
     position: fixed;
@@ -1311,6 +1307,13 @@ header {
     height: 100%;
 
 } */
+
+.searchIcon {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    /* color: #D74434!important; */
+}
 
 .searchBox {
     border-radius: 20px;
