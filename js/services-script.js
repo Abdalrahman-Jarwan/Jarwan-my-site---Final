@@ -33,6 +33,8 @@ getCard = (cardData) => {
 
     return `
     
+    
+
     <a href="/Home.html">
     <section class="Servcard ">
         <div class="imgBx">
@@ -43,7 +45,7 @@ getCard = (cardData) => {
         <div class="contentBx">
             <h2>${cardData.title}</h2>
             <div class="size">
-                <h3 class="text-muted">Model: ${cardData.model}</h3>
+                <h3 class="text-muted">${cardData.model}</h3>
 
             </div>
             <div class="color">
@@ -84,58 +86,58 @@ removeCards = () => {
 getHeadsetData = () => {
     return [
         {
-            title: 'headset 1',
+            title: 'Razer',
             price: 105,
             image: './images/headphones_home.png',
-            model: 'Pixel 3',
+            model: 'Razer Kraken Ultimate RGB',
         },
         {
-            title: 'Apple',
-            price: 200,
+            title: 'Logitech',
+            price: 126,
             image: './images/headset-2.png',
-            model: 'iPhone 11',
+            model: 'Logitech G733 Lightspeed',
         },
         {
-            title: 'Samsung',
-            price: 300,
+            title: 'Razer',
+            price: 80,
             image: './images/headset-3.png',
-            model: 'Galaxy S10',
+            model: 'Razer Kraken Pro 5.1',
         },
         {
-            title: 'Huawei',
-            price: 400,
+            title: 'MSI',
+            price: 30,
             image: './images/headset-4.png',
-            model: 'P30 Pro',
+            model: 'MSI Immerse GH50',
         },
         {
-            title: 'Xiaomi',
-            price: 500,
+            title: 'Corsair',
+            price: 64,
             image: './images/headset-5.png',
-            model: 'Mi 9',
+            model: 'Corsair Void RGB Elite ',
         },
         {
-            title: 'OnePlus',
-            price: 600,
+            title: 'Corsair',
+            price: 130,
             image: './images/headset-6.png',
-            model: '7 Pro',
+            model: 'Corsair HS80 RGB',
         },
         {
-            title: 'Oppo',
-            price: 700,
+            title: 'MSI',
+            price: 50,
             image: './images/headset-7.png',
-            model: 'Reno 2',
+            model: 'MSI IMMERSE HH23',
         },
         {
-            title: 'HTC',
-            price: 800,
+            title: 'Logitech',
+            price: 80,
             image: './images/headset-8.png',
-            model: 'U19e',
+            model: 'Logitech G435 LIGHTSPEED',
         },
         {
-            title: 'Nokia',
-            price: 900,
+            title: 'Razer',
+            price: 90,
             image: './images/headset-9.png',
-            model: '8.1',
+            model: 'Razer BlackShark V2 X',
         },
     ]
 }
@@ -143,58 +145,58 @@ getHeadsetData = () => {
 getKeyboardData = () => {
     return [
         {
-            title: 'Keyboard 1',
+            title: 'CORSAIR 1',
             price: 105,
             image: './images/Keyboard-1.png',
-            model: 'Pixel 3',
+            model: 'CORSAIR K55 RGB',
         },
         {
-            title: 'Apple',
-            price: 200,
+            title: 'Razer',
+            price: 92,
             image: './images/Keyboard-3.png',
-            model: 'iPhone 11',
+            model: 'Razer Cynosa Chroma',
         },
         {
-            title: 'Samsung',
-            price: 300,
+            title: 'MSI',
+            price: 120,
             image: './images/Keyboard-4.png',
-            model: 'Galaxy S10',
+            model: 'MSI Vigor GK30 RGB',
         },
         {
-            title: 'Huawei',
+            title: 'MSI',
             price: 400,
             image: './images/Keyboard-6.png',
-            model: 'P30 Pro',
+            model: 'MSI Vigor GK71 Sonic',
         },
         {
-            title: 'Xiaomi',
-            price: 500,
+            title: 'Razer',
+            price: 88,
             image: './images/Keyboard-7.png',
-            model: 'Mi 9',
+            model: 'Razer BlackWidow V3 ',
         },
         {
-            title: 'OnePlus',
-            price: 600,
+            title: 'CORSAIR',
+            price: 133,
             image: './images/Keyboard-8.png',
-            model: '7 Pro',
+            model: 'CORSAIR K100 RGB',
         },
         {
-            title: 'Oppo',
-            price: 700,
+            title: 'Logitech',
+            price: 170,
             image: './images/Keyboard-9.png',
-            model: 'Reno 2',
+            model: 'Logitech G PRO',
         },
         {
-            title: 'HTC',
-            price: 800,
+            title: 'Logitech',
+            price: 99,
             image: './images/Keyboard-10.png',
-            model: 'U19e',
+            model: 'Logitech G815 LIGHTSYNC',
         },
         {
-            title: 'Nokia',
-            price: 900,
+            title: 'Logitech',
+            price: 86,
             image: './images/Keyboard-11.png',
-            model: '8.1',
+            model: 'Logitech MK270',
         },
     ]
 }
@@ -202,58 +204,58 @@ getKeyboardData = () => {
 getMiceData = () => {
     return [
         {
-            title: 'mouse 1',
+            title: 'Razer',
             price: 105,
             image: './images/Mouse-1.png',
-            model: 'Pixel 3',
+            model: 'Razer DeathAdder V2',
         },
         {
-            title: 'Apple',
-            price: 200,
+            title: 'Logitech ',
+            price: 93,
             image: './images/Mouse-2.png',
-            model: 'iPhone 11',
+            model: 'Logitech G502 HERO',
         },
         {
-            title: 'Samsung',
-            price: 300,
+            title: 'Logitech ',
+            price: 97,
             image: './images/Mouse-3.png',
-            model: 'Galaxy S10',
+            model: 'Logitech G305 LIGHTSPEED',
         },
         {
-            title: 'Huawei',
-            price: 400,
+            title: 'MSI',
+            price: 77,
             image: './images/Mouse-5.png',
-            model: 'P30 Pro',
+            model: 'MSI Clutch GM20 Elite',
         },
         {
-            title: 'Xiaomi',
-            price: 500,
+            title: 'Corsair',
+            price: 30,
             image: './images/Mouse-6.png',
-            model: 'Mi 9',
+            model: 'Corsair Scimitar RGB Elite',
         },
         {
-            title: 'OnePlus',
-            price: 600,
+            title: 'MSI',
+            price: 110,
             image: './images/Mouse-7.png',
-            model: '7 Pro',
+            model: 'MSI Clutch SD40',
         },
         {
-            title: 'Oppo',
-            price: 700,
+            title: 'Corsair',
+            price: 130,
             image: './images/Mouse-8.png',
-            model: 'Reno 2',
+            model: 'Corsair Nightsword RGB',
         },
         {
-            title: 'HTC',
-            price: 800,
+            title: 'Razer',
+            price: 80,
             image: './images/Mouse-4.png',
-            model: 'U19e',
+            model: 'Razer Viper Ultimate',
         },
         {
-            title: 'Nokia',
-            price: 900,
+            title: 'Corsair',
+            price: 70,
             image: './images/Mouse-9.png',
-            model: '8.1',
+            model: 'CORSAIR M65 Pro RGB',
         },
     ]
 }
