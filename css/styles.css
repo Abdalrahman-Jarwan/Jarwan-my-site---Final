@@ -1311,8 +1311,9 @@ header {
 .searchIcon {
     position: absolute;
     bottom: 0;
+    top: 63%;
     left: 10px;
-    /* color: #D74434!important; */
+    color: #f87061 !important;
 }
 
 .searchBox {
@@ -1337,17 +1338,16 @@ header {
 
 .searchBox:focus {
 
-    background-color: #D74434;
+    background-color: #636363;
 
     color: #F7DCB0;
 }
 
 
 .searchBox:hover {
-
-    background-color: #D74434;
-
+    background-color: #636363;
 }
+
 
 
 @media only screen and (max-width: 768px) {

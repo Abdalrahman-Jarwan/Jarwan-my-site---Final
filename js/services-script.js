@@ -261,19 +261,19 @@ loadHeadsetData = () => {
     removeCards();
     let data = getHeadsetData();
     let pagedData = getPagination(data);
-    renderCards(pagedData, 'Product-Headset');
+    renderCards(pagedData, 'ProductHeadset');
 }
 
 loadKeyboardData = () => {
     removeCards();
     let data = getKeyboardData();
     let pagedData = getPagination(data);
-    renderCards(pagedData, 'Product-Keyboard');
+    renderCards(pagedData, 'ProductKeyboard');
 }
 
 loadMiceData = () => {
     removeCards();
     let data = getMiceData();
     let pagedData = getPagination(data);
-    renderCards(pagedData, 'Product-Mouse');
+    renderCards(pagedData, 'ProductMouse');
 }
