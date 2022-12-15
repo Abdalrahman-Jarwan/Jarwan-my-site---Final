@@ -18,9 +18,57 @@
 <body>
 
     <!--Begin Header-->
+    <header>
+        <div id="navContainer" class="container">
+            <div class="row">
+                <section class="col-md-2">
+                    <div id="site-logo">
+                        <a href="index.html">
+                            <img src="./images/Cycle_Logo.png" width="80" height="65" alt="Site Logo">
+                        </a>
+                    </div>
+                </section>
+                <section class="col-md-6">
+                    <nav id="site-main-nav">
+                        <ul id="lol">
+                            <li><a href="About.html"><span class="hoverable">About</span></a>
+                            </li>
+                            <li><a href="Services.html"><span class="hoverable">Services</span></a>
+                            </li>
+                            <li><a class="active-nav-link" href="Contact.html"><span
+                                        class="hoverable">Contact</span></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+
+
+                <section class="col-md-4 searchWrapper align-self-start justify-content-center">
+                    <input type="text" class="searchBox form-control form-control-sm">
+                    <span class="searchIcon"></span>
+                </section>
+            </div>
+
+        </div>
+
+
+
+        <!--mobile nav-->
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a href="About.html">About</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Terms&Conditions.html">Terms & Conditions</a></li>
+            </ul>
+        </div>
+
+    </header>
 
     <!--End Header-->
-
 
     <!--Start Content-->
 
@@ -51,14 +99,13 @@
                         <div id="contact-social-icons">
 
 
-                            <a class="contact-icon" href="https://www.facebook.com/"> <i id="btn"
+                            <a class="contact-icon" href="https://www.facebook.com/"> <i
                                     class="fab fa-facebook-square fa-2xl"> </i>
                             </a>
-                            <a class="contact-icon" href="https://www.instagram.com/"> <i id="btn"
+                            <a class="contact-icon" href="https://www.instagram.com/"> <i
                                     class="fab fa-instagram fa-2xl"></i> </a>
-                            <a class="contact-icon" href="https://twitter.com/"> <i id="btn"
+                            <a class="contact-icon" href="https://twitter.com/"> <i
                                     class="fab fa-twitter-square fa-2xl"></i> </a>
-
 
                         </div>
                     </div>
@@ -82,7 +129,7 @@
 
                                 <div class="form-group">
                                     <label for="inputName"></label>
-                                    <input name="person_name" class="form-control" type="text" id="inputName"
+                                    <input name="person_name" class="form-control" type="text" id="inputSubject"
                                         placeholder="Subject">
                                 </div>
 
@@ -107,12 +154,12 @@
                             <div id="contact-social-icons-mobile">
 
 
-                                <a class="contact-icon" href="https://www.facebook.com/"> <i id="btn"
+                                <a class="contact-icon" href="https://www.facebook.com/"> <i
                                         class="fab fa-facebook-square fa-2xl"> </i>
                                 </a>
-                                <a class="contact-icon" href="https://www.instagram.com/"> <i id="btn"
+                                <a class="contact-icon" href="https://www.instagram.com/"> <i
                                         class="fab fa-instagram fa-2xl"></i> </a>
-                                <a class="contact-icon" href="https://twitter.com/"> <i id="btn"
+                                <a class="contact-icon" href="https://twitter.com/"> <i
                                         class="fab fa-twitter-square fa-2xl"></i> </a>
 
 
@@ -134,7 +181,89 @@
 
 
 
+    <!--Start Footer-->
 
+
+    <footer>
+        <div id="footer-container">
+            <footer class="container">
+                <div class="row no-gutters">
+
+                    <section class="col-md-4">
+                        <div id="footer-credits-left">
+                            <div id="site-logo-footer">
+
+                                <img src="./images/Cycle_Footer.png" width="80" height="55" alt="Site Logo">
+                                <p id="footerCredit"> &copy; 2022 AJarwan </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="col-md-8">
+                        <div id="footer-credits-right">
+
+                            <div id="social-icons">
+
+                                <a class="footer-link" href="Terms&Conditions.html"><span class="hoverable">Terms &
+                                        Conditions</span></a>
+                                <a class="footer-link" href="Contact.html"><span class="hoverable">Contact</span></a>
+
+                                <a class="icon" href="https://www.facebook.com/"> <i
+                                        class="fab fa-facebook-square fa-2xl"> </i>
+                                </a>
+                                <a class="icon" href="https://www.instagram.com/"> <i
+                                        class="fab fa-instagram fa-2xl"></i> </a>
+                                <a class="icon" href="https://twitter.com/"> <i
+                                        class="fab fa-twitter-square fa-2xl"></i> </a>
+
+                            </div>
+
+                        </div>
+                    </section>
+                </div>
+            </footer>
+        </div>
+
+        <!--End Footer Credits-->
+
+        <!--Mobile Footer-->
+        <div id="mobile-footer-container">
+            <footer class="container">
+                <div class="row no-gutters">
+                    <section class="col-md-6">
+                        <div id="mobile-footer-credits-left">
+
+                            <a id="mobile-footer-link1" href="Terms&Conditions.html"><span class="hoverable">Terms &
+                                    Conditions</span></a>
+
+                            <a id="mobile-footer-link2" href="Contact.html"><span class="hoverable">Contact</span></a>
+
+                        </div>
+                    </section>
+
+                    <section class="col-md-6">
+
+                        <div id="mobile-footer-credits-right">
+
+                            <p id="mobile-footerCredit"> &copy; 2022 AJarwan
+
+                                <a id="facebook" href="https://www.facebook.com/"> <i
+                                        class="fab fa-facebook-square fa-2xl"></i></a>
+                                <a href="https://www.instagram.com/"> <i class="fab fa-instagram fa-2xl"></i></a>
+                                <a href="https://twitter.com/"> <i class="fab fa-twitter-square fa-2xl"></i>
+                                </a>
+
+                            </p>
+
+                        </div>
+                    </section>
+                </div>
+            </footer>
+        </div>
+    </footer>
+
+
+    <!--End Footer -->
 
 
 
